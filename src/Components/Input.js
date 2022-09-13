@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Radio } from './Radio';
 import { Select } from './Select';
 import { Text } from './Text';

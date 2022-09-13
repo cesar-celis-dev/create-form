@@ -32,25 +32,25 @@ function App() {
 
 
   return (
-    <div>
+    <div className="divall">
       <h2>Create Input Text</h2>
-      name: <input type="text" value={nameTextValue} onChange={(e) => setNameTextValue(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateInputText() } }} />
+      name: <input className="inputhead" type="text" value={nameTextValue} onChange={(e) => setNameTextValue(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateInputText() } }} />
       <button onClick={handleCreateInputText}>Create Input Text</button>
       <hr />
 
       <h2>Create Input Select</h2>
-      name: <input type="text" value={nameSelect} onChange={(e) => setNameSelect(e.target.value)} />
+      name: <input className="inputhead"  type="text" value={nameSelect} onChange={(e) => setNameSelect(e.target.value)} />
       <br />
       <label>Por favor, ingrese una lista de opciones separadas por comas: </label>
-      <input type="text" value={selectOptions} onChange={(e) => setSelectOptions(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateSelect() } }} />
+      <input className="inputhead" type="text" value={selectOptions} onChange={(e) => setSelectOptions(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateSelect() } }} />
       <button onClick={handleCreateSelect}>Create Select</button>
       <hr />
 
       <h2>Create Input Radio Options</h2>
-      name: <input type="text" value={nameRadio} onChange={(e) => setNameRadio(e.target.value)} />
+      name: <input className="inputhead"  type="text" value={nameRadio} onChange={(e) => setNameRadio(e.target.value)} />
       <br />
       <label>Por favor, ingrese una lista de opciones separadas por comas: </label>
-      <input type="text" value={radioOptions} onChange={(e) => setRadioOptions(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateRadio() } }} />
+      <input className="inputhead"  type="text" value={radioOptions} onChange={(e) => setRadioOptions(e.target.value)} onKeyDown={e => { if (e.key === 'Enter') { handleCreateRadio() } }} />
       <button onClick={handleCreateRadio}>Create Select</button>
       <hr />
 

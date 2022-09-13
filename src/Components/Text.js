@@ -5,9 +5,9 @@ const short = require('short-uuid');
 export const Text = ({label, name}) => {
   return (
     <div>
-      <label>{label || name}:</label>
+      <label className='name'>{label || name}:</label>
       <br />
-      <input type="text" name={name} />
+      <input className='inputtxt' type="text" name={name} />
       <br />
     </div>
   )

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 const short = require('short-uuid');
 
 export const Radio = ({label, name, properties}) => {
   return (
     <div>
-      <p>{name || label}</p>
+      <p className='name'>{name || label}</p>
 
       {properties.map((property, i) => {
         if (property.trim().length) {

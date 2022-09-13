@@ -5,7 +5,7 @@ const short = require('short-uuid');
 export const Select = ({label, name, properties}) => {
   return (
     <div>
-      <label>{label || name}: </label>
+      <label className='name'>{label || name}: </label>
       <br />
       <select name={name}>
         {properties.map((property, i) => {

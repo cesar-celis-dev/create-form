@@ -1,0 +1,31 @@
+.inputtxt{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 41, 88);
+  }
+  .inputhead{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .divall{
+    padding: 30px;
+  }
