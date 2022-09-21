@@ -1,7 +1,7 @@
 import React from 'react';
 const short = require('short-uuid');
 
-export const Radio = ({label, name, properties}) => {
+export const Radio = ({label, name, properties, handleDelete}) => {
   return (
     <div>
       <p className='name'>{name || label}</p>
@@ -15,6 +15,7 @@ export const Radio = ({label, name, properties}) => {
           </>
         }
       })}
+      <button onClick={(e) => handleDelete(e)}>Delete</button>
       <br />
     </div>
   )

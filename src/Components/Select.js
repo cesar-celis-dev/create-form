@@ -2,7 +2,7 @@ import React from 'react';
 const short = require('short-uuid');
 
 
-export const Select = ({label, name, properties}) => {
+export const Select = ({label, name, properties, handleDelete}) => {
   return (
     <div>
       <label className='name'>{label || name}: </label>
@@ -14,6 +14,7 @@ export const Select = ({label, name, properties}) => {
           }
         })}
       </select>
+      <button onClick={(e) => handleDelete(e)}>Delete</button>
       <br />
     </div>
   )
